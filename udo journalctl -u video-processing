@@ -1,0 +1,12 @@
+[0;1;31m×[0m video-processing.service - Gunicorn instance for video processing app
+     Loaded: loaded (/etc/systemd/system/video-processing.service; enabled; vendor preset: enabled)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Wed 2025-03-05 21:08:24 UTC; 3s ago
+    Process: 235360 ExecStart=/root/env/myenv/bin/gunicorn --workers 3 --bind 0.0.0.0:7854 --timeout 600 --graceful-timeout 600 app:app [0;1;31m(code=exited, status=217/USER)[0m
+   Main PID: 235360 (code=exited, status=217/USER)
+        CPU: 1ms
+
+Mar 05 21:08:24 srv608073 systemd[1]: video-processing.service: Scheduled restart job, restart counter is at 5.
+Mar 05 21:08:24 srv608073 systemd[1]: Stopped Gunicorn instance for video processing app.
+Mar 05 21:08:24 srv608073 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvideo-processing.service: Start request repeated too quickly.[0m
+Mar 05 21:08:24 srv608073 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvideo-processing.service: Failed with result 'exit-code'.[0m
+Mar 05 21:08:24 srv608073 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Gunicorn instance for video processing app.[0m
